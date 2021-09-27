@@ -169,12 +169,6 @@ void setup_mpd()
 
 
 	mpd_run_play(conn);
-
-
-	//enum mpd_state state;
-	//state = mpd_status_get_state(status);
-
-	//mpd_connection_free(conn);
 }
 
 void setup_pulse_audio()
@@ -229,12 +223,7 @@ void sink_input_info_cb(pa_context* cntxt, const pa_sink_input_info* info, int e
 		return;
 	}
 	
-	//printf("eol is zero!\n");
-
 	const char* app_name = pa_proplist_gets(info->proplist, PA_PROP_APPLICATION_NAME);
-
-	//printf(app_name);
-	//printf("\n\n");
 	
 	for(int i=0;i<noOfSelectedPrograms;i++)
 	{
