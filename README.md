@@ -4,5 +4,5 @@ A linux daemon that pauses mpd when some other selected application is playing a
 
 ## Requirements 
 
-PulseAudio or PipeWire
-MPD (Music Player Daemon)
+* PulseAudio or PipeWire
+* MPD (Music Player Daemon)
